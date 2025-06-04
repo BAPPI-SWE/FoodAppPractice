@@ -19,27 +19,37 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout"
         style="@style/Widget.Material3.TextInputLayout.FilledBox.ExposedDropdownMenu"
         android:layout_width="match_parent"
         android:layout_height="57dp"
-        app:boxStrokeWidth="0dp"
 
         android:layout_marginTop="28dp"
+        app:boxStrokeWidth="0dp"
         app:endIconDrawable="@drawable/down"
         app:layout_constraintTop_toBottomOf="@+id/textView7"
-        tools:layout_editor_absoluteX="0dp" >
+        tools:layout_editor_absoluteX="0dp">
 
         <AutoCompleteTextView
+            android:id="@+id/list3"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:text="Choose Location"
-            android:id="@+id/list3"
-            android:background="@color/white"/>
+            android:background="@color/white"
+            android:text="Choose Location" />
     </com.google.android.material.textfield.TextInputLayout>
 
+    <Button
+        android:id="@+id/button9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Home"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout" />
 
 
-        app:layout_constraintStart_toStartOf="parent" />
+    app:layout_constraintStart_toStartOf="parent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
